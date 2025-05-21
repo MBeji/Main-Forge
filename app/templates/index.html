@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse d'Appel d'Offres</title>
+</head>
+<body>
+    <h1>Analyse d'Appel d'Offres</h1>
+
+    {% if error_message %}
+        <p style="color:red; font-weight:bold;">Error: {{ error_message }}</p>
+    {% endif %}
+
+    <form method="POST" enctype="multipart/form-data">
+        <label for="api_key">OpenAI API Key (optional, overrides environment variable OPENAI_API_KEY):</label><br>
+        <input type="text" id="api_key" name="api_key" value="{{ api_key }}"><br><br> 
+        
+        <input type="file" name="file" required>
+        <input type="submit" value="Analyser">
+    </form>
+
+    {% if extracted_text %}
+        <h2>Texte extrait :</h2>
+        <textarea rows="10" cols="80" readonly>{{ extracted_text }}</textarea>
+    {% endif %}
+
+    {% if parsed_analysis %}
+        <h2>Analyse LLM :</h2>
+
+        {% if parsed_analysis.recommendation == "GO" %}
+            <h3 style="color:green;">Recommandation Globale : {{ parsed_analysis.recommendation }}</h3>
+        {% elif parsed_analysis.recommendation == "NO-GO" %}
+            <h3 style="color:red;">Recommandation Globale : {{ parsed_analysis.recommendation }}</h3>
+        {% elif parsed_analysis.recommendation == "UNCERTAIN" %}
+            <h3 style="color:orange;">Recommandation Globale : {{ parsed_analysis.recommendation }}</h3>
+        {% else %}
+            <h3>Recommandation Globale : {{ parsed_analysis.recommendation }}</h3>
+        {% endif %}
+
+        <h4>Raisonnement :</h4>
+        <p>{{ parsed_analysis.reasoning | replace('\n', '<br>') | safe }}</p>
+
+        <h4>Résumé du Projet :</h4>
+        <p>{{ parsed_analysis.summary | replace('\n', '<br>') | safe }}</p>
+
+        <h4>Exigences Clés :</h4>
+        <div>{{ parsed_analysis.requirements | replace('\n', '<br>') | safe }}</div>
+
+        <h4>Défis Potentiels :</h4>
+        <div>{{ parsed_analysis.challenges | replace('\n', '<br>') | safe }}</div>
+    {% elif llm_analysis_raw and not error_message %} {# Fallback to raw if parsing failed but no major error #}
+        <h2>Analyse LLM (brute) :</h2>
+        <textarea rows="15" cols="80" readonly>{{ llm_analysis_raw }}</textarea>
+    {% endif %}
+</body>
+</html>
