@@ -1,7 +1,8 @@
 # 🚀 Guide de Partage Rapide - Calculateur d'Empreinte Carbone
 
-## 📦 Fichier à Partager
-✅ **EmpreinteCarbone-Source-2025-05-26.zip** (30 KB) - PRÊT POUR LE PARTAGE
+## 📦 Accès au Projet
+✅ **GitHub**: https://github.com/MBeji/Main-Forge
+✅ **Archive ZIP**: Disponible via GitHub ou contact direct
 
 ## 🌐 Options de Déploiement Gratuit (Recommandées)
 
@@ -18,11 +19,11 @@
 2. Dans le dashboard, faire glisser le dossier `dist/` (après build)
 3. **Résultat**: URL publique automatique (ex: https://empreinte-carbone.netlify.app)
 
-### Option 3: GitHub Pages (Pour développeurs)
-1. Créer un repository GitHub public
-2. Uploader les fichiers du ZIP
-3. Activer GitHub Pages dans Settings > Pages
-4. **Résultat**: URL publique GitHub (ex: https://username.github.io/empreinte-carbone)
+### Option 3: GitHub (Repository public)
+1. Aller sur https://github.com/MBeji/Main-Forge
+2. Cliquer "Code" puis "Download ZIP" pour télécharger
+3. Ou cloner: `git clone https://github.com/MBeji/Main-Forge.git`
+4. **Résultat**: Code source complet + documentation
 
 ## 💻 Installation Locale (Pour développeurs)
 
@@ -59,9 +60,9 @@ npm run dev             # Démarrer le serveur local
 
 ## 📋 Instructions Simplifiées
 
-1. **Partage immédiat**: Envoyez le fichier `EmpreinteCarbone-Source-2025-05-26.zip`
-2. **Démo en ligne**: Uploadez sur Vercel/Netlify 
-3. **Personnalisation**: Extrayez le ZIP et modifiez le code source
+1. **Accès GitHub**: https://github.com/MBeji/Main-Forge
+2. **Démo en ligne**: Uploadez sur Vercel/Netlify après téléchargement
+3. **Installation locale**: Cloner le repo et suivre README.md
 
 ## 🔧 Notes Techniques
 
