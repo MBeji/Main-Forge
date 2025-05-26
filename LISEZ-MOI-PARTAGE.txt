@@ -1,0 +1,57 @@
+📦 EMPREINTE CARBONE - PACKAGE FINAL
+==========================================
+
+🎉 Votre application est prête à être partagée !
+
+📁 FICHIER À PARTAGER:
+→ EmpreinteCarbone-FINAL-2025-05-26.zip (69.6 KB)
+
+🚀 DÉMARRAGE RAPIDE POUR L'AUTRE PERSONNE:
+
+1️⃣ INSTALLATION AUTOMATIQUE (Windows):
+   - Extraire le ZIP
+   - Double-cliquer sur "DEMARRER.bat"
+   - L'application s'ouvre sur http://localhost:3000
+
+2️⃣ INSTALLATION MANUELLE:
+   - Extraire le ZIP
+   - Installer Node.js si nécessaire
+   - Terminal: npm install
+   - Terminal: npm run dev
+
+🌐 DÉPLOIEMENT EN LIGNE (GRATUIT):
+   
+   ⚡ VERCEL (Le plus rapide):
+   → https://vercel.com
+   → Glisser-déposer le ZIP
+   → URL publique en 2 minutes
+   
+   ⚡ NETLIFY:
+   → https://netlify.com
+   → Glisser-déposer le dossier
+   → URL publique en 3 minutes
+
+📚 DOCUMENTATION INCLUSE:
+   ✅ README.md - Guide technique complet
+   ✅ PARTAGE-RAPIDE.md - Instructions de déploiement
+   ✅ DEPLOYMENT.md - Guide avancé
+   ✅ DEMARRER.bat - Script de démarrage automatique
+
+🎯 FONCTIONNALITÉS:
+   ✅ Questionnaire adaptatif par secteur
+   ✅ Calculs temps réel (facteurs ADEME)
+   ✅ Dashboard interactif avec graphiques
+   ✅ Recommandations personnalisées
+   ✅ Design responsive mobile/desktop
+   ✅ Interface en français
+
+🔧 TECHNOLOGIES:
+   React 18 + TypeScript + Vite + Tailwind CSS
+
+💡 CONSEIL:
+   Pour une démonstration immédiate, utilisez Vercel !
+   C'est gratuit et prend 2 minutes.
+
+==========================================
+✅ Votre package est complet et optimisé !
+==========================================
