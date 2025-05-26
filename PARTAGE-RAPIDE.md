@@ -6,7 +6,12 @@
 
 ## 🌐 Options de Déploiement Gratuit (Recommandées)
 
-### Option 1: Vercel (Le plus simple - 2 minutes)
+### Option 1: GitHub Pages (Intégré - 0 minute)
+🎯 **URL directe**: https://mbeji.github.io/Main-Forge/
+- **Avantage**: Aucune configuration requise, déjà configuré
+- **Résultat**: Application accessible immédiatement en ligne
+
+### Option 2: Vercel (Le plus simple - 2 minutes)
 1. Aller sur https://vercel.com et créer un compte gratuit
 2. Cliquer sur "New Project"
 3. Glisser-déposer le fichier ZIP ou connecter GitHub
@@ -14,12 +19,12 @@
 5. Cliquer "Deploy" 
 6. **Résultat**: URL publique automatique (ex: https://empreinte-carbone.vercel.app)
 
-### Option 2: Netlify (Très simple - 3 minutes)
+### Option 3: Netlify (Très simple - 3 minutes)
 1. Aller sur https://netlify.com et créer un compte
 2. Dans le dashboard, faire glisser le dossier `dist/` (après build)
 3. **Résultat**: URL publique automatique (ex: https://empreinte-carbone.netlify.app)
 
-### Option 3: GitHub (Repository public)
+### Option 4: GitHub (Repository public)
 1. Aller sur https://github.com/MBeji/Main-Forge
 2. Cliquer "Code" puis "Download ZIP" pour télécharger
 3. Ou cloner: `git clone https://github.com/MBeji/Main-Forge.git`
