@@ -189,3 +189,31 @@ Pour toute question ou suggestion :
 ---
 
 *Construit avec ❤️ pour un avenir plus durable*
+
+## Deployment to Vercel
+
+To deploy this project to Vercel, follow these steps:
+
+1.  **Sign up or Log in to Vercel:**
+    *   Go to [https://vercel.com/](https://vercel.com/) and sign up for a new account or log in if you already have one.
+
+2.  **Import Project:**
+    *   From your Vercel dashboard, click on "Add New..." and then "Project".
+    *   Connect your Git provider (e.g., GitHub, GitLab, Bitbucket) where this repository is hosted.
+    *   Select this repository from the list.
+
+3.  **Configure Project (if necessary):**
+    *   Vercel should automatically detect that this is a Vite project and configure the build settings correctly using the `vercel.json` file.
+    *   **Framework Preset:** Should be detected as "Vite".
+    *   **Build Command:** Should default to `npm run build` or `yarn build` (as specified in `vercel.json` or `package.json`).
+    *   **Output Directory:** Should be detected as `dist` (as specified in `vercel.json`).
+    *   You can add environment variables here if your project requires them.
+
+4.  **Deploy:**
+    *   Click the "Deploy" button.
+    *   Vercel will build and deploy your project. You'll be provided with a unique URL for your deployment.
+
+5.  **Custom Domains (Optional):**
+    *   Once deployed, you can assign a custom domain to your Vercel project through the project settings.
+
+Your project will now be deployed, and any subsequent pushes to your connected Git branch (e.g., `main` or `master`) will automatically trigger new deployments on Vercel.
